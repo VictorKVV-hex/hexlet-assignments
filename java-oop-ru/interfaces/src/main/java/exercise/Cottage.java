@@ -8,14 +8,12 @@ public class Cottage implements Home{
         this.area = area;
         this.floorCount = floorCount;
     }
-
     @Override
     public double getArea() {
         return area;
     }
     @Override
     public int compareTo(Home another) {
-        int compare = Double.compare(area, another.getArea());
         return Double.compare(area, another.getArea());
     }
 

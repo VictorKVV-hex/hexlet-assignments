@@ -16,7 +16,6 @@ public class Flat implements Home {
     @Override
     public int compareTo(Home another) {
 //        return (area < another.getArea()) ? -1 : ((area == another.getArea()) ? 0 : 1);
-        int compare = Double.compare(area, another.getArea());
         return Double.compare((area + balconyArea), another.getArea());
     }
 
