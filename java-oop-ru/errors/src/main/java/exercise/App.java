@@ -8,10 +8,10 @@ public class App {
             System.out.println(square);
         } catch (NegativeRadiusException negativeRadiusException) {
             System.out.println("Не удалось посчитать площадь");
-        } catch ( Exception e) {
+        } catch (Exception e) {
             System.out.println("Не удалось посчитать площадь");
         } finally {
             System.out.println("Вычисление окончено");
-        };
+        }
     }
 }
