@@ -15,7 +15,7 @@ public class SessionsController {
     // BEGIN
     public static void loginPage(Context ctx) {
         var page = new LoginPage("", null);
-        ctx.render("build.jte", Collections.singletonMap("page", page));
+        ctx.render("build.jte", model("page", page));
     }
 
     public static void login(Context ctx) {
