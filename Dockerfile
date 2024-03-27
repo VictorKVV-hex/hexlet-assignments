@@ -1,4 +1,4 @@
-FROM gradle:8.2-jdk20
+FROM gradle:8.4-jdk20
 
 WORKDIR /java-web-ru/database
 
