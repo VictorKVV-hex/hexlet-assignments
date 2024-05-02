@@ -16,10 +16,10 @@ public final class App {
         });
 
         // BEGIN
-        app.get(NamedRoutes.buildSessionPath(), SessionsController::loginPage);
-        app.post(NamedRoutes.loginPath(), SessionsController::login);
-        app.post(NamedRoutes.logoutPath(), SessionsController::destroy);
-        app.get(NamedRoutes.rootPath(), SessionsController::mainPage);
+        app.get(NamedRoutes.buildSessionPath(), SessionsController::loginPage); // "/sessions/build"
+        app.post(NamedRoutes.loginPath(), SessionsController::login);           // "/sessions"
+        app.post(NamedRoutes.logoutPath(), SessionsController::destroy);        // "/sessions/delete"
+        app.get(NamedRoutes.rootPath(), SessionsController::mainPage);          // "/"
         // END
 
         return app;
