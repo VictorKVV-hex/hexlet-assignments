@@ -29,6 +29,7 @@ public class Application {
         return users.stream()
                 .filter(p -> admins.getAdmins().contains(p.getEmail()))
                 .map(User::getName)
+//                .map(z -> z.getName())
                 .sorted()
                 .toList();
     }

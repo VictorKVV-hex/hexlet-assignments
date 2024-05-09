@@ -2,7 +2,7 @@
 @param EditPostPage page
 
 @template.layout.page(
-content = @`
+    content = @`
     <h2>Правка поста</h2>
     <form action="/posts/${page.getId()}" method="post">
         <div class="mb-3">
