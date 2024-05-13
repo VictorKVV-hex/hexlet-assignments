@@ -16,7 +16,7 @@ public class NamedRoutes {
 
     public static String userPath(String id) {
         return "/users/" + id;
-    }
+    }  //    /users/{id}
 
     public static String buildUserPath() {
         return "/users/build";
