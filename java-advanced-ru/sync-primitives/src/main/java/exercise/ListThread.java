@@ -1,14 +1,14 @@
 package exercise;
 
 // BEGIN
-class ListThread implements Runnable {
-
+class ListThread extends Thread {
     private SafetyList list;
 
-    ListThread(SafetyList list) {
+    public ListThread(SafetyList list) {
         this.list = list;
     }
 
+    @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {
             try {
@@ -19,5 +19,6 @@ class ListThread implements Runnable {
             list.add(i);
         }
     }
+
 }
 // END
