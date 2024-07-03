@@ -91,7 +91,7 @@ class App {
         CompletableFuture<String> result = App.unionFiles("src/main/resources/file1.txt",
                 "src/main/resources/file2.txt",
                 "src/main/resources/dest.txt");
-        System.out.println("Result= " + result.join());
+        System.out.println("Result= " + result.join()); // Если не подождать .join'ом, и вывести .toString(), то result не успевает выполнится до конца
         // END
     }
 
